@@ -30,10 +30,14 @@ A [Fibonacci polynomial][fibonacci-polynomials] is expressed according to the fo
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial" align="center" raw="F_n(x) = \begin{cases}0 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}" alt="Fibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_n(x) = \begin{cases}0 &amp; \textrm{if}\ n = 0\\1 &amp; \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:fibonacci_polynomial">
+```math
+F_n(x) = \begin{cases}0 & \textrm{if}\ n = 0\\1 & \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) & \textrm{if}\ n \geq 2\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_n(x) = \begin{cases}0 &amp; \textrm{if}\ n = 0\\1 &amp; \textrm{if}\ n = 1\\x \cdot F_{n-1}(x) + F_{n-2}(x) &amp; \textrm{if}\ n \geq 2\end{cases}" data-equation="eq:fibonacci_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial.svg" alt="Fibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ Alternatively, if `F(n,k)` is the coefficient of `x^k` in `F_n(x)`, then
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial_combinatoric" align="center" raw="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" alt="Combinatoric interpretation of a Fibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" data-equation="eq:fibonacci_polynomial_combinatoric">
+```math
+F_n(x) = \sum_{k = 0}^n F(n,k) x^k
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_n(x) = \sum_{k = 0}^n F(n,k) x^k" data-equation="eq:fibonacci_polynomial_combinatoric">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial_combinatoric.svg" alt="Combinatoric interpretation of a Fibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -52,10 +60,14 @@ where
 
 <!-- <equation class="equation" label="eq:fibonacci_polynomial_coefficients" align="center" raw="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" alt="Fibonacci polynomial coefficients."> -->
 
-<div class="equation" align="center" data-raw-text="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" data-equation="eq:fibonacci_polynomial_coefficients">
+```math
+F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F(n,k) = {{\frac{n+k-1}{2}} \choose {k}}" data-equation="eq:fibonacci_polynomial_coefficients">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_fibonacci_polynomial_coefficients.svg" alt="Fibonacci polynomial coefficients.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -63,10 +75,14 @@ We can extend [Fibonacci polynomials][fibonacci-polynomials] to negative `n` usi
 
 <!-- <equation class="equation" label="eq:negafibonacci_polynomial" align="center" raw="F_{-n}(x) = (-1)^{n-1} F_n(x)" alt="NegaFibonacci polynomial."> -->
 
-<div class="equation" align="center" data-raw-text="F_{-n}(x) = (-1)^{n-1} F_n(x)" data-equation="eq:negafibonacci_polynomial">
+```math
+F_{-n}(x) = (-1)^{n-1} F_n(x)
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_{-n}(x) = (-1)^{n-1} F_n(x)" data-equation="eq:negafibonacci_polynomial">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7e0a95722efd9c771b129597380c63dc6715508b/lib/node_modules/@stdlib/math/base/tools/fibpoly/docs/img/equation_negafibonacci_polynomial.svg" alt="NegaFibonacci polynomial.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -74,38 +90,30 @@ We can extend [Fibonacci polynomials][fibonacci-polynomials] to negative `n` usi
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-tools-fibpoly
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-fibpoly = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var fibpoly = require( 'path/to/vendor/umd/math-base-tools-fibpoly/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.fibpoly;
-})();
-</script>
+var fibpoly = require( '@stdlib/math-base-tools-fibpoly' );
 ```
 
 #### fibpoly( n, x )
@@ -152,13 +160,8 @@ v = polyval( 2.0 ); // => 2^4 + 3*2^2 + 1
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var fibpoly = require( '@stdlib/math-base-tools-fibpoly' );
 
 var i;
 
@@ -166,11 +169,6 @@ var i;
 for ( i = -77; i < 78; i++ ) {
     console.log( 'F_%d = %d', i, fibpoly( i, 1.0 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -245,7 +243,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -267,9 +265,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly/tree/umd
+[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
 
-[@stdlib/math/base/tools/lucaspoly]: https://github.com/stdlib-js/math-base-tools-lucaspoly/tree/umd
+[@stdlib/math/base/tools/lucaspoly]: https://github.com/stdlib-js/math-base-tools-lucaspoly
 
 <!-- </related-links> -->
 
