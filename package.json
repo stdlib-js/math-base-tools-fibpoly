@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/math-base-special-abs": "^0.2.1",
-    "@stdlib/math-base-special-binomcoef": "^0.2.1",
+    "@stdlib/math-base-special-binomcoef": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.2.1",
     "@stdlib/math-base-tools-evalpoly": "^0.2.1",
     "@stdlib/types": "^0.3.2",
