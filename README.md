@@ -101,38 +101,32 @@ F_{-n}(x) = (-1)^{n-1} F_n(x)
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-tools-fibpoly
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-fibpoly = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var fibpoly = require( 'path/to/vendor/umd/math-base-tools-fibpoly/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.fibpoly;
-})();
-</script>
+var fibpoly = require( '@stdlib/math-base-tools-fibpoly' );
 ```
 
 #### fibpoly( n, x )
@@ -179,13 +173,8 @@ v = polyval( 2.0 ); // => 2^4 + 3*2^2 + 1
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var fibpoly = require( '@stdlib/math-base-tools-fibpoly' );
 
 var i;
 
@@ -193,11 +182,6 @@ var i;
 for ( i = -77; i < 78; i++ ) {
     console.log( 'F_%d = %d', i, fibpoly( i, 1.0 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -297,9 +281,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly/tree/umd
+[@stdlib/math/base/tools/evalpoly]: https://github.com/stdlib-js/math-base-tools-evalpoly
 
-[@stdlib/math/base/tools/lucaspoly]: https://github.com/stdlib-js/math-base-tools-lucaspoly/tree/umd
+[@stdlib/math/base/tools/lucaspoly]: https://github.com/stdlib-js/math-base-tools-lucaspoly
 
 <!-- </related-links> -->
 
