@@ -108,13 +108,13 @@ F_{-n}(x) = (-1)^{n-1} F_n(x)
 ## Usage
 
 ```javascript
-import fibpoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@deno/mod.js';
+import fibpoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@v0.2.2-deno/mod.js';
 ```
 
 #### fibpoly( n, x )
@@ -162,7 +162,7 @@ v = polyval( 2.0 ); // => 2^4 + 3*2^2 + 1
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import fibpoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@deno/mod.js';
+import fibpoly from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-tools-fibpoly@v0.2.2-deno/mod.js';
 
 var i;
 
