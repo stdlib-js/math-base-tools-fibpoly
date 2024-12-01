@@ -41,7 +41,7 @@
     "@stdlib/math-base-special-binomcoef": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/math-base-tools-evalpoly": "^0.2.2",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2"
   },
   "devDependencies": {
