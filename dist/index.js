@@ -1,4 +1,4 @@
-"use strict";var o=function(a,r){return function(){return r||a((r={exports:{}}).exports,r),r.exports}};var c=o(function(G,v){
+"use strict";var o=function(a,r){return function(){try{return r||a((r={exports:{}}).exports,r),r.exports}catch(e){throw (r=0, e)}};};var c=o(function(G,v){
 var h={};v.exports=h
 });var u=o(function(H,f){
 var d=require('@stdlib/math-base-special-binomcoef/dist'),s=c();function m(a){var r,e;if(r=s[a],r===void 0){for(r=[],e=0;e<a;e++)r.push(0);for(e=a-1;e>=0;e-=2)r[e]=d((a+e-1)/2,e);s[a]=r}return r}f.exports=m
